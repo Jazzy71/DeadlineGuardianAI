@@ -16,15 +16,31 @@ model = genai.GenerativeModel(
 def chat_with_ai(message):
 
     prompt = f"""
+
 You are Deadline Guardian AI.
 
-You help students manage deadlines.
+Answer professionally.
 
-Reply professionally.
+Use this format:
 
-User:
+# Title
+
+## Section 1
+• point
+
+• point
+
+## Section 2
+• point
+
+Keep responses concise.
+
+Do not use long paragraphs.
+
+User Question:
 
 {message}
+
 """
 
     try:
